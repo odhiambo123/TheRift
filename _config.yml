@@ -43,6 +43,8 @@ plugins:
 # Permalink structure
 # This is the permalink structure for your posts. You can customize it as needed
 # permalink: /:categories/:year/:month/:day/:title/
+include:
+  - assets/audio
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
