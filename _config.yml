@@ -1,0 +1,104 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Web Development and Programming Blog
+description: A blog about web development and programming.
+author: David Odhiambo
+email: eng.david.odhi@gmail.com
+description: Understanding web development and programming.
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  odhiambo123
+
+# Build settings
+theme: minima # The theme you want to use for your site. You can find themes at
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# Permalink structure
+# This is the permalink structure for your posts. You can customize it as needed
+# permalink: /:categories/:year/:month/:day/:title/
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+# ... other Jekyll configurations ...
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 10 # Number of posts per page
+paginate_path: "/blog/page:num" # Pagination path
+
+# Define your main navigation menu here
+menu:
+  - title: Home
+    url: /
+  #- title: About
+  #  url: /about.html
+  - title: Blog # This will be a dropdown parent
+    url: /blog/ # Link to the main blog page
+    subitems:
+      - title: Category JavaScript
+        url: blog/javascript/
+      - title: Category Python
+        url: /blog/python/
+      - title: Category HTML
+        url: /blog/html/
+      - title: Category CSS
+        url: /blog/css/
+      - title: Category IoT
+        url: /blog/iot/
+      - title: Category Bash
+        url: /blog/bash/
+      - title: Category Microservices
+        url: /blog/microservices/
+      - title: Category Docker
+        url: /blog/docker/
+      - title: Category Kubernetes
+        url: /blog/kubernetes/
+      - title: Category DevOps
+        url: /blog/devops/
+      - title: Category Cloud-Computing
+        url: /blog/cloud-computing/
+      - title: Category AI
+        url: /blog/ai/
+      - title: Category Web-Development
+        url: /blog/web-development/
+  #- title: Services
+  #  url: /services.html
+  - title: Contact
+    url: /contact.html
